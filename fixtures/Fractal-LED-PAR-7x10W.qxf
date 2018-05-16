@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE FixtureDefinition>
+<FixtureDefinition xmlns="http://www.qlcplus.org/FixtureDefinition">
+ <Creator>
+  <Name>Q Light Controller Plus</Name>
+  <Version>4.11.0</Version>
+  <Author>Petr Vesely</Author>
+ </Creator>
+ <Manufacturer>Fractal</Manufacturer>
+ <Model>LED PAR 7x10W</Model>
+ <Type>Color Changer</Type>
+ <Channel Name="DIM">
+  <Group Byte="0">Intensity</Group>
+  <Capability Min="0" Max="255">CH1</Capability>
+ </Channel>
+ <Channel Name="RED">
+  <Group Byte="0">Intensity</Group>
+  <Colour>Red</Colour>
+  <Capability Min="0" Max="255"></Capability>
+ </Channel>
+ <Channel Name="GRN">
+  <Group Byte="0">Intensity</Group>
+  <Colour>Green</Colour>
+  <Capability Min="0" Max="255"></Capability>
+ </Channel>
+ <Channel Name="BLUE">
+  <Group Byte="0">Intensity</Group>
+  <Colour>Blue</Colour>
+  <Capability Min="0" Max="255"></Capability>
+ </Channel>
+ <Channel Name="WHITE">
+  <Group Byte="0">Intensity</Group>
+  <Colour>White</Colour>
+ </Channel>
+ <Channel Name="STR">
+  <Group Byte="0">Effect</Group>
+  <Capability Min="0" Max="255"></Capability>
+ </Channel>
+ <Channel Name="FUNC">
+  <Group Byte="0">Effect</Group>
+  <Capability Min="0" Max="50">CH8 control</Capability>
+  <Capability Min="51" Max="100">Different color output</Capability>
+  <Capability Min="101" Max="150">Colors jump change</Capability>
+  <Capability Min="151" Max="200">Colors gradate</Capability>
+  <Capability Min="201" Max="250">Color pulse change</Capability>
+  <Capability Min="251" Max="255">Sound activate</Capability>
+ </Channel>
+ <Channel Name="SPEED">
+  <Group Byte="0">Speed</Group>
+  <Capability Min="0" Max="255">Func speed</Capability>
+ </Channel>
+ <Mode Name="LIGHT">
+  <Physical>
+   <Bulb Type="LED" Lumens="0" ColourTemperature="0"/>
+   <Dimensions Weight="0" Width="0" Height="0" Depth="0"/>
+   <Lens Name="Other" DegreesMin="0" DegreesMax="0"/>
+   <Focus Type="Fixed" PanMax="0" TiltMax="0"/>
+   <Technical PowerConsumption="70" DmxConnector="3-pin"/>
+  </Physical>
+  <Channel Number="0">DIM</Channel>
+  <Channel Number="1">RED</Channel>
+  <Channel Number="2">GRN</Channel>
+  <Channel Number="3">BLUE</Channel>
+  <Channel Number="4">WHITE</Channel>
+  <Channel Number="5">STR</Channel>
+  <Channel Number="6">FUNC</Channel>
+  <Channel Number="7">SPEED</Channel>
+ </Mode>
+</FixtureDefinition>
